@@ -9,7 +9,7 @@ Page({
       { id: 203, name: '半亩田', src: '../../media/farms/03.jpg' },
       { id: 204, name: '江的农庄', src: '../../media/farms/04.jpg' },
       { id: 205, name: '农场007', src: '../../media/farms/05.jpg' },
-      { id: 206, name: '农场1号', src: '../../media/farms/06.jpg' }
+      { id: 206, name: '农场1号', src: '../../media/farms/06.jpg' },
     ]
   },
   scan: function () {

@@ -4,11 +4,10 @@
     <input class="input-search" placeholder="搜索" />
     <view class="btn-plain scan" bindtap="scan"></view>
   </view>
-  <scroll-view class="grid-fluid h-100" scroll-y>
+  <scroll-view class="grid-fluid" scroll-y>
     <view class="lib" wx:for="{{farms}}" wx:key="id" 
       bindtap="openLive"
       data-id="{{item.id}}"
-      data-test="xx"
       >
       <image src="{{item.src}}" lazy-load="{{true}}"></image>
       <view>{{item.name}}</view>

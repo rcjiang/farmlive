@@ -48,13 +48,6 @@ page{
   flex-direction: column;
 }
 
-.grid-fluid{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .search-holder{
   position: relative;
   display: flex;

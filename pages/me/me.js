@@ -28,12 +28,14 @@ Page({
                 avatarUrl: res.userInfo.avatarUrl,
                 userInfo: res.userInfo
               });
-              console.log(res.userInfo);
             }
           })
         }
       }
     })
+  },
+  onGetUserInfo: function() {
+
   },
 
   /**
