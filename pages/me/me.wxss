@@ -1,0 +1,99 @@
+/* pages/me.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo {
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  border-bottom: 1px solid #eee;
+}
+
+.userinfo-avatar {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 30px;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-profile > text{
+  display: block;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.usercard{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.usercard-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.usercard-item + .usercard-item{
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.usercard-item > text{
+  display: block;
+  line-height: 1.6;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top:10px;
+  padding: 10px;
+  background-color:#fff;
+}
+.row-item{
+  flex-basis: 70px;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.num-tip{
+  position:relative;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  text-align: center;
+}
+.num-tip image{
+  width: 100%;
+  height: 100%;
+}
+
+.num-tip > text{
+  position: absolute;
+  top:0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 13px;
+  padding:0 4px;
+  font-size:10px;
+}

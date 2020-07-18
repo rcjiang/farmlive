@@ -1,0 +1,16 @@
+<!--pages/live/live.wxml-->
+<view class="full">
+  <video 
+      id="myVideo" 
+      src="{{src}}" 
+      binderror="onVideoErr" 
+      danmu-list="{{danmuList}}" 
+      enable-danmu 
+      danmu-btn
+      autoplay
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+      picture-in-picture-mode="{{['push', 'pop']}}"
+    ></video>
+</view>

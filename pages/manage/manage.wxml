@@ -1,0 +1,23 @@
+<!--pages/manage/manage.wxml-->
+<view class="full rows">
+  <view class="header">
+    <text>我的农场</text>
+    <view class="actions">
+      <view class="btn-plain btn-add"></view>
+    </view>
+  </view>
+  <scroll-view class="list">
+    <view class="list-item" wx:for="{{farms}}" wx:key="id">
+      <image class="item-icon" src="{{item.icon}}"></image>
+      <view class="item-body">
+        <view class="item-title">{{item.name}}</view>
+        <view class="item-content">
+          <view class="address">{{item.address}}</view>
+          <view class="tags">
+            <view class="tag">{{item.area}}㎡</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

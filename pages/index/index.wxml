@@ -1,13 +1,17 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="full">
+  <view class="search-holder">
+    <input class="input-search" placeholder="搜索" />
+    <view class="btn-plain scan" bindtap="scan"></view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <scroll-view class="grid-fluid h-100" scroll-y>
+    <view class="lib" wx:for="{{farms}}" wx:key="id" 
+      bindtap="openLive"
+      data-id="{{item.id}}"
+      data-test="xx"
+      >
+      <image src="{{item.src}}" lazy-load="{{true}}"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </scroll-view>
 </view>

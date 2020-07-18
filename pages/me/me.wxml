@@ -1,0 +1,59 @@
+<!--pages/me.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></view>
+    <view class="userinfo-profile">
+      <text class="name">{{userInfo.nickName}}</text>
+      <text class="level">{{level}}</text>
+    </view>
+  </view>
+  <view class="usercard">
+    <view class="usercard-item">
+      <text>{{collection}}</text>
+      <text>信誉</text>
+    </view>
+    <view class="usercard-item">
+      <text>{{achievement}}</text>
+      <text>成就</text>
+    </view>
+    <view class="usercard-item">
+      <text>{{point}}</text>
+      <text>积分</text>
+    </view>
+  </view>
+  <view class="row">
+      <view class="row-item">
+        <view class="num-tip">
+          <image mode="aspectFit" src="../../icons/farm.png"></image>
+          <text>{{buy.cart}}</text>
+        </view>
+        <view>农场</view>
+      </view>
+      <view class="row-item">
+        <view class="num-tip">
+          <image mode="aspectFit" src="../../icons/harvest.png"></image>
+          <text>{{buy.auction}}</text>
+        </view>
+        <view>采收</view>
+      </view>
+      <view class="row-item">
+        <view class="num-tip">
+          <image mode="aspectFit" src="../../icons/sale.png"></image>
+          <text>{{buy.pay}}</text>
+        </view>
+        <view>出售</view>
+      </view>
+      <view class="row-item">
+        <view class="num-tip">
+          <image mode="aspectFit" src="../../icons/receipt.png"></image>
+          <text>{{buy.deliver}}</text>
+        </view>
+        <view>收货</view>
+      </view>
+  </view>
+</view>

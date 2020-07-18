@@ -1,21 +1,50 @@
 /**index.wxss**/
-.userinfo {
+page  view{
+  box-sizing: border-box;
+}
+
+.grid-fluid{
+  background: #f6f6f6;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.lib{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  background-color: white;
+  border: 2px solid #f6f6f6;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.lib image{
+  height: 100px;
+  width: 100%;
 }
 
-.usermotto {
-  margin-top: 200px;
+.lib > view{
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.search-holder .input-search {
+  background-color: #f6f6f6;
+}
+
+.scan {
+  background-size: contain;
+  background-position: center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABVUlEQVRYR+1Xy03EMBB9losAQQdw5QxsA3CCOiZKASsKiPLqWE7QAAtnrtABK7aIKMgr2xgDWZNkFQ72yYo/8/JmPDNPYeKhJraPbwBE5A7ACYCDCNyS5CwFsIgsAZxFe1cAnkleht+/ABCRtsPAI8nzAQD8UZLerp8URbFo2/YKwI3WelFV1WuKsdQ9ZVkeNU1zDWCulLqt69rMP10gIu8A9gDMSBoKRx8iYhh8ALAmuR8D2NAf0jM6AgDOzc6Od0G8sAvj5s4MoIuBTeClPrW+LrI5wtv5f5mw75/1PZcZCPPATwWkL7PbzvnCNhUAX9hyDGQG4iBsU9uubWH+27pNxd5OLseZgZCBN6MFtNbHY3fELiBtZ/wCYEXyMG5KjSC5MG05AJOrR+2MbUdsuuI5gHsnUP4iTIYqo25h4latQDm1GiF8zkOV0Vop9eQEibs4p+IPuki6IU0cGqsAAAAASUVORK5CYII=");
+}
+
+.search-holder .btn-plain {
+  position: absolute;
+  top: 14px;
+  right: 16px;
 }
