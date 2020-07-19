@@ -3,7 +3,7 @@
   <view class="header">
     <text>我的农场</text>
     <view class="actions">
-      <view class="btn-plain btn-add"></view>
+      <view class="btn-plain btn-add" bindtap="addFarm"></view>
     </view>
   </view>
   <scroll-view class="list">

@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/manage/manage",
     "pages/me/me",
-    "pages/live/live"
+    "pages/live/live",
+    "pages/addfarm/add"
   ],
   "window": {
     "backgroundTextStyle": "light",

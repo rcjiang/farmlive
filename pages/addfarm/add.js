@@ -1,32 +1,51 @@
-// pages/manage/manage.js
+// pages/addfarm/add.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    farms: [
-      {
-        id: 1,
-        name: '半亩田',
-        icon: '../../media/farms/03.jpg',
-        address: '内蒙古 呼伦贝尔 陈巴尔虎旗',
-        area: '800'
+    markers: [{
+      iconPath: "/icons/location.png",
+      id: 0,
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 16,
+      height: 16
+    }],
+    polyline: [{
+      points: [{
+        longitude: 113.3245211,
+        latitude: 23.10229
+      }, {
+        longitude: 113.324520,
+        latitude: 23.21229
+      }],
+      color:"#FF0000DD",
+      width: 2,
+      dottedLine: true
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/icons/farm2.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
       },
-      {
-        id: 2,
-        name: '江的农庄',
-        icon: '../../media/farms/04.jpg',
-        address: '内蒙古 呼伦贝尔 新巴尔虎右旗',
-        area: '1000'
-      }
-    ]
+      clickable: true
+    }]
   },
-  addFarm: function () {
-    wx.navigateTo({
-      url: '/pages/addfarm/add',
-    })
+  regionchange(e) {
+    console.log(e.type)
   },
+  markertap(e) {
+    console.log(e.detail.markerId)
+  },
+  controltap(e) {
+    console.log(e.detail.controlId)
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

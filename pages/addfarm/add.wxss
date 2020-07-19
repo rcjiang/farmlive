@@ -1,0 +1,5 @@
+/* pages/addfarm/add.wxss */
+map {
+  width: 100%;
+  height: 100%;
+}
