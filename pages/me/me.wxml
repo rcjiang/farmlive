@@ -27,33 +27,33 @@
     </view>
   </view>
   <view class="row">
-      <view class="row-item">
+      <navigator class="row-item" url="/pages/manage/manage" open-type="switchTab">
         <view class="num-tip">
           <image mode="aspectFit" src="../../icons/farm.png"></image>
           <text>{{buy.cart}}</text>
         </view>
         <view>农场</view>
-      </view>
-      <view class="row-item">
+      </navigator>
+      <navigator class="row-item" url="/pages/manage/manage" open-type="switchTab">
         <view class="num-tip">
           <image mode="aspectFit" src="../../icons/harvest.png"></image>
           <text>{{buy.auction}}</text>
         </view>
         <view>采收</view>
-      </view>
-      <view class="row-item">
+      </navigator>
+      <navigator class="row-item">
         <view class="num-tip">
           <image mode="aspectFit" src="../../icons/sale.png"></image>
           <text>{{buy.pay}}</text>
         </view>
         <view>出售</view>
-      </view>
-      <view class="row-item">
+      </navigator>
+      <navigator class="row-item">
         <view class="num-tip">
           <image mode="aspectFit" src="../../icons/receipt.png"></image>
           <text>{{buy.deliver}}</text>
         </view>
         <view>收货</view>
-      </view>
+      </navigator>
   </view>
 </view>
